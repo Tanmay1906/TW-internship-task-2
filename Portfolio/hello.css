@@ -1,0 +1,32 @@
+/* CSS for Header Animation */
+#header {
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* CSS for Content Animation */
+#home, #about, #projects, #achievements, #contact {
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slideIn 2s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
